@@ -1,0 +1,11 @@
+@import "../../assets/styles/variables";
+@import "swiper/css/pagination";
+
+.main {
+  @include block66;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 20px;
+}

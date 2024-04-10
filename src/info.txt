@@ -1,0 +1,1 @@
+Ключ от крипты https://api.cryptorank.io/v1/currencies?api_key=f82840021aa82ad93ecdefb00892677bdfef851bed6a62967bf1c6cb6377

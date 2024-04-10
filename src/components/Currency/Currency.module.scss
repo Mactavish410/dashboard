@@ -1,0 +1,9 @@
+@import "../../assets/styles/variables";
+
+.main {
+  @include block33;
+}
+
+.mySwiper {
+  @include swiper;
+}
