@@ -1,14 +1,28 @@
 import React, { useState, useEffect } from "react";
-import styles from "./Wether.module.scss";
+import styled from "./Wether.module.scss";
 import axios from "axios";
 
 const Wether = () => {
   const [posts, setPosts] = React.useState([]);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     try {
+  //       const res = await axios.get(
+  //         "https://api.openweathermap.org/data/2.5/weather?q=Оренбург&appid=9cfb9d6a2b28e4a7fa4dff8dbb735338"
+  //       );
+  //       setPosts(res.data);
+  //     } catch (err) {
+  //       console.log(err);
+  //       console.log("Error");
+  //     }
+  //   }
+  //   fetchData();
+  // }, []);
   useEffect(() => {
     async function fetchData() {
       try {
         const res = await axios.get(
-          "https://api.openweathermap.org/data/2.5/weather?q=Оренбург&appid=9cfb9d6a2b28e4a7fa4dff8dbb735338"
+          "https://api.openweathermap.org/data/2.5/weather?lat=51.8291456&lon=55.1518208&appid=9cfb9d6a2b28e4a7fa4dff8dbb735338"
         );
         setPosts(res.data);
       } catch (err) {
@@ -18,15 +32,15 @@ const Wether = () => {
     }
     fetchData();
   }, []);
-  // console.log(posts);
-
+  // console.log(posts);9cfb9d6a2b28e4a7fa4dff8dbb735338
+  console.log(posts);
   if (posts.length === 0) return null;
   return (
-    <div className={styles.main}>
-      <h3>{posts.name}</h3>
-      <h2>{Math.round(posts.main.temp - 273)}°</h2>
-      <p>
-        H:{Math.round(posts.coord.lat)}° L:{Math.round(posts.coord.lon)}°
+    <div className={styled.main}>
+      <h3 className={styled.cityname}>{posts.name}</h3>
+      <h2 className={styled.temp}>{Math.round(posts.main.temp - 273)}°</h2>
+      <p className={styled.tatlon}>
+        H:{posts.coord.lat.toFixed(4)}° L:{posts.coord.lon.toFixed(4)}°
       </p>
       <ul>
         <li>

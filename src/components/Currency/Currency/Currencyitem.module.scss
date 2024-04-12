@@ -1,0 +1,14 @@
+@import "../../../assets/styles/variables";
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1px;
+  div {
+    cursor: pointer;
+  }
+  div:hover {
+    color: $color-violet;
+  }
+}

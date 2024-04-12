@@ -2,4 +2,22 @@
 
 .main {
   @include block33;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+}
+
+.temp {
+  font-size: 40px;
+}
+
+.tatlon {
+  font-size: 20px;
 }

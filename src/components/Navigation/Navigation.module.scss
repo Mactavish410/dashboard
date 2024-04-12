@@ -3,17 +3,18 @@
   margin-top: 20px;
   padding: 0 20px;
 
-  //   background: #42b41f;
   li {
     opacity: 0.5;
     width: 200px;
     padding: 10px 20px;
     border-radius: $border-radius;
-    // background-color: $color-block;
     transition: 0.3s linear;
   }
   li:hover {
     opacity: 1;
     background-color: $color-block;
+    a {
+      color: $color-violet;
+    }
   }
 }

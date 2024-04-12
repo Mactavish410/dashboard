@@ -6,7 +6,7 @@ const Cryptoitem = (item) => {
     <div className={styled.main}>
       <ul>
         <li>{item.name}</li>
-        <li>{item.values.USD.price}</li>
+        <li>{item.values.USD.price.toFixed(3)}</li>
       </ul>
     </div>
   );

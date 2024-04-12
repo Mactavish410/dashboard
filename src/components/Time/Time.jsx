@@ -23,19 +23,3 @@ const Time = () => {
 };
 
 export default Time;
-// const [posts, setPosts] = React.useState([]);
-//   useEffect(() => {
-//     async function fetchData() {
-//       try {
-//         const res = await axios.get(
-//           "https://www.cbr-xml-daily.ru/daily_json.js"
-//         );
-//         setPosts(res.data.Valute);
-//       } catch (err) {
-//         console.log(err);
-//         console.log("Error");
-//       }
-//     }
-//     fetchData();
-//   }, []);
-//   console.log(posts);
